@@ -2,6 +2,8 @@
 
 *An AI adventure guide designed to become unnecessary.*
 
+Created by **Noorin Sakhi**.
+
 Built for **Hacktoberfest 2026, Challenge 2: Open-Source AI ("Touch Grass")**.
 
 ## What OFFLINE is
@@ -173,6 +175,10 @@ offline/
 ├── README.md
 └── LICENSE
 ```
+
+## Author and license
+
+Designed and built by **Noorin Sakhi** for Hacktoberfest 2026. Released under the MIT License (see `LICENSE`).
 
 ## Future improvements
 

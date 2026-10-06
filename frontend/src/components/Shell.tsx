@@ -8,6 +8,11 @@ export function Shell({ children, dim = false }: { children: ReactNode; dim?: bo
       <Contours />
       <div className="neatline" aria-hidden="true" />
       <main className="content">{children}</main>
+      {!dim && (
+        <footer className="credit">
+          Made by <strong>Noorin Sakhi</strong> &middot; Hacktoberfest 2026 &middot; MIT licence
+        </footer>
+      )}
     </div>
   );
 }

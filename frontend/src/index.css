@@ -15,7 +15,7 @@ code { background: rgba(58, 42, 26, 0.1); padding: 0.1em 0.4em; border-radius: 3
 .shell--dim { --paper: #14202b; --ink: #efe2c4; --ink2: #b9ab8c; color: #efe2c4; background: radial-gradient(ellipse at 50% 30%, #1d2f3f, #0d1620); }
 .neatline { position: absolute; inset: 0.7rem; border: 3px double var(--ink); opacity: 0.55; pointer-events: none; z-index: 2; }
 .contours { position: absolute; top: -4rem; right: -8rem; width: 30rem; height: 30rem; color: var(--ink2); opacity: 0.2; pointer-events: none; }
-.content { position: relative; z-index: 1; flex: 1; width: 100%; max-width: 34rem; margin: 0 auto; display: flex; flex-direction: column; justify-content: center; gap: 1.5rem; padding: max(2.2rem, env(safe-area-inset-top)) 1.9rem max(2.4rem, env(safe-area-inset-bottom)); }
+.content { position: relative; z-index: 1; flex: 1; width: 100%; max-width: 34rem; margin: 0 auto; display: flex; flex-direction: column; justify-content: center; gap: 1.5rem; padding: max(2.2rem, env(safe-area-inset-top)) 1.9rem max(3.6rem, calc(env(safe-area-inset-bottom) + 3rem)); }
 .stack { display: flex; flex-direction: column; gap: 1.4rem; }
 .stack--center { align-items: center; text-align: center; }
 .actions { display: flex; flex-direction: column; align-items: stretch; gap: 0.9rem; margin-top: 0.4rem; }
@@ -125,3 +125,7 @@ h1:focus, h2:focus { outline: none; }
 
 @media (min-width: 640px) { .btn--big { width: auto; min-width: 18rem; align-self: center; } }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition-duration: 0.01ms !important; } }
+
+/* Author credit, printed in the map's bottom margin like a cartographer's note. */
+.credit { position: absolute; left: 0; right: 0; bottom: 1.15rem; z-index: 3; text-align: center; font-size: 0.78rem; font-style: italic; letter-spacing: 0.04em; color: var(--ink2); padding: 0 1.5rem; }
+.credit strong { font-style: normal; font-weight: 700; color: var(--ink); letter-spacing: 0.08em; }
